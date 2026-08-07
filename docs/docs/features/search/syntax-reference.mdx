@@ -8,20 +8,9 @@ Sourcebot uses a powerful regex-based query language that enabled precise code s
 
 Queries consist of space-separated search patterns that are matched against file contents. A file must have at least one match for each expression to be included. Queries can optionally contain search filters to further refine the search results.
 
-## Keyword search (default)
-
-Keyword search matches search patterns exactly in file contents. Wrapping search patterns in `""` combines them as a single expression.
-
-| Example | Explanation |
-| :--- | :--- |
-| `foo` | Match files containing the keyword `foo` |
-| `foo bar` | Match files containing both `foo` **and** `bar` |
-| `"foo bar"` | Match files containing the phrase `foo bar` |
-| `"foo \"bar\""` | Match files containing `foo "bar"` exactly (escaped quotes) |
-
 ## Regex search
 
-Toggle the regex button (`.*`) in the search bar to interpret search patterns as regular expressions.
+Bare words search across file content and are interpreted as case-sensitive regular expressions. Wrapping search patterns in `""` combines them as a single expression.
 
 | Example | Explanation |
 | :--- | :--- |
@@ -32,7 +21,7 @@ Toggle the regex button (`.*`) in the search bar to interpret search patterns as
 
 ## Search filters
 
-Search queries (keyword or regex) can include multiple search filters to further refine the search results. Some filters can be negated using the `-` prefix.
+Search queries can include multiple search filters to further refine the search results. Some filters can be negated using the `-` prefix.
 
 | Prefix | Description | Example |
 | :--- | :--- | :--- |
