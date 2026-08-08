@@ -181,9 +181,9 @@ const options = {
         /**
          * Relative time from now in seconds when to expire the session.
          * 
-         * @default 30 days
+         * @default 1 day
          */
-        AUTH_SESSION_MAX_AGE_SECONDS: numberSchema.default(60 * 60 * 24 * 30),
+        AUTH_SESSION_MAX_AGE_SECONDS: numberSchema.default(60 * 60 * 24),
 
         /**
          * How often the session should be updated in seconds. If set to 0, session is updated every time.
