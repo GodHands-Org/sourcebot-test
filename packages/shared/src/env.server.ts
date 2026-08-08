@@ -267,7 +267,7 @@ const options = {
         // EE License
         SOURCEBOT_EE_LICENSE_KEY: z.string().optional(),
         SOURCEBOT_EE_AUDIT_LOGGING_ENABLED: booleanSchema.default('true'),
-        SOURCEBOT_EE_AUDIT_RETENTION_DAYS: numberSchema.default(90),
+        SOURCEBOT_EE_AUDIT_RETENTION_DAYS: numberSchema.default(120),
 
         // GitHub app for review agent
         GITHUB_REVIEW_AGENT_APP_ID: z.string().optional(),
