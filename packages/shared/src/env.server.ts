@@ -190,7 +190,7 @@ const options = {
          *
          * @default 1 day
          */
-        AUTH_SESSION_UPDATE_AGE_SECONDS: numberSchema.default(60 * 60 * 24),
+        AUTH_SESSION_UPDATE_AGE_SECONDS: numberSchema.default(60 * 60 * 6),
 
         /**
          * Lifetime of an OAuth authorization code, in seconds.
