@@ -331,6 +331,10 @@ Parameters:
 | `sort` | no | Sort repositories by 'name' or 'pushed' (most recent commit). Default: 'name'. |
 | `direction` | no | Sort direction: 'asc' or 'desc' (default: 'asc'). |
 
+### `get_files`
+
+Retrieves file contents for one or more files by accepting a JSON request body validated against the files request schema. Returns a JSON response or a service error if the request is invalid or the underlying operation fails.
+
 ### `read_file`
 
 Reads the source code for a given file, with optional line range control for large files.
