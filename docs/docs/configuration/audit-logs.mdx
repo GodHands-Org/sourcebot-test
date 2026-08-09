@@ -16,7 +16,7 @@ This feature gives security and compliance teams the necessary information to en
 Audit logs are enabled by default and can be controlled with the `SOURCEBOT_EE_AUDIT_LOGGING_ENABLED` [environment variable](/docs/configuration/environment-variables).
 
 ## Retention Policy
-By default, audit logs older than 180 days are automatically pruned daily. You can configure the retention period using the `SOURCEBOT_EE_AUDIT_RETENTION_DAYS` [environment variable](/docs/configuration/environment-variables). Set it to `0` to disable automatic pruning and retain logs indefinitely.
+By default, audit logs older than 120 days are automatically pruned daily. You can configure the retention period using the `SOURCEBOT_EE_AUDIT_RETENTION_DAYS` [environment variable](/docs/configuration/environment-variables). Set it to `0` to disable automatic pruning and retain logs indefinitely.
 
 ## Fetching Audit Logs
 Audit logs are stored in the [postgres database](/docs/misc/architecture) connected to Sourcebot. To fetch all of the audit logs, you can use the following API:
