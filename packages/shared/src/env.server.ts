@@ -378,6 +378,12 @@ const options = {
         FALLBACK_GITLAB_CLOUD_TOKEN: z.string().optional(),
         FALLBACK_GITEA_CLOUD_TOKEN: z.string().optional(),
 
+        // Azure DevOps connection token. The connections docs already tell
+        // people to set this; until now it was only readable through a
+        // config file, so a plain `ADO_TOKEN=...` in the environment was
+        // silently ignored.
+        ADO_TOKEN: z.string().optional(),
+
         REDIS_URL: z.string().url().default("redis://localhost:6379"),
         REDIS_REMOVE_ON_COMPLETE: numberSchema.default(0),
         REDIS_REMOVE_ON_FAIL: numberSchema.default(100),
